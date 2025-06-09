@@ -11,7 +11,7 @@ export const availableChallenges: Challenge[] = [
     category: "hydration",
     dailyGoal: "Drink 8 glasses of water",
     reward: "Hydration Master badge + 50 bonus points",
-    participants: 1247,
+    participants: 0,
   },
   {
     id: "morning-routine-30-day",
@@ -23,7 +23,7 @@ export const availableChallenges: Challenge[] = [
     category: "productivity",
     dailyGoal: "Complete morning routine before 9 AM",
     reward: "Early Bird badge + 100 bonus points",
-    participants: 892,
+    participants: 0,
   },
   {
     id: "mindfulness-14-day",
@@ -35,7 +35,7 @@ export const availableChallenges: Challenge[] = [
     category: "mindfulness",
     dailyGoal: "Meditate for 10+ minutes",
     reward: "Zen Master badge + 75 bonus points",
-    participants: 654,
+    participants: 0,
   },
   {
     id: "movement-21-day",
@@ -47,7 +47,7 @@ export const availableChallenges: Challenge[] = [
     category: "exercise",
     dailyGoal: "30 minutes of physical activity",
     reward: "Active Lifestyle badge + 90 bonus points",
-    participants: 1156,
+    participants: 0,
   },
 ];
 
