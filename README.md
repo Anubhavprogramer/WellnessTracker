@@ -9,6 +9,8 @@ A comprehensive wellness tracking application that helps users monitor their dai
 
 ## ✨ Features
 
+[Deploy](https://wellness-tracker-theta.vercel.app)
+
 ### 🎯 **Wellness Scoring System**
 
 - **Comprehensive Assessment**: Track sleep, exercise, nutrition, mental health, and productivity
