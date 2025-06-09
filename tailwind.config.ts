@@ -62,6 +62,25 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Wellness theme colors
+        wellness: {
+          50: "#f0f9ff",
+          100: "#e0f2fe",
+          200: "#bae6fd",
+          300: "#7dd3fc",
+          400: "#38bdf8",
+          500: "#0ea5e9",
+          600: "#0284c7",
+          700: "#0369a1",
+          800: "#075985",
+          900: "#0c4a6e",
+        },
+        score: {
+          beginner: "#ef4444",
+          intermediate: "#f59e0b",
+          advanced: "#3b82f6",
+          expert: "#10b981",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -85,10 +104,65 @@ export default {
             height: "0",
           },
         },
+        "score-pulse": {
+          "0%, 100%": {
+            transform: "scale(1)",
+            opacity: "1",
+          },
+          "50%": {
+            transform: "scale(1.05)",
+            opacity: "0.8",
+          },
+        },
+        "badge-bounce": {
+          "0%, 20%, 53%, 80%, 100%": {
+            transform: "translate3d(0,0,0)",
+          },
+          "40%, 43%": {
+            transform: "translate3d(0, -8px, 0)",
+          },
+          "70%": {
+            transform: "translate3d(0, -4px, 0)",
+          },
+          "90%": {
+            transform: "translate3d(0, -2px, 0)",
+          },
+        },
+        "slide-in-from-left": {
+          "0%": {
+            transform: "translateX(-100%)",
+            opacity: "0",
+          },
+          "100%": {
+            transform: "translateX(0)",
+            opacity: "1",
+          },
+        },
+        "slide-in-from-right": {
+          "0%": {
+            transform: "translateX(100%)",
+            opacity: "0",
+          },
+          "100%": {
+            transform: "translateX(0)",
+            opacity: "1",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "score-pulse": "score-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        "badge-bounce": "badge-bounce 1s ease-in-out",
+        "slide-in-left": "slide-in-from-left 0.5s ease-out",
+        "slide-in-right": "slide-in-from-right 0.5s ease-out",
+      },
+      backgroundImage: {
+        "gradient-wellness":
+          "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+        "gradient-score": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+        "gradient-challenge":
+          "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
       },
     },
   },
